@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Василий Гурьянов](https://up.htmlacademy.ru/htmlcss/26/user/1151277).
-* Наставник: [Елизавета Винокурова](https://htmlacademy.ru/profile/elivin).
+* Наставник: [Елизавета Винокурова](https://up.htmlacademy.ru/htmlcss/26/user/123355).
 
 ---
 
