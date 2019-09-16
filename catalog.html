@@ -25,9 +25,9 @@
 	  <p>Магазин готовых шаблонов</p>
 	</header>
     <main>
-	<h1 style="display: none">Каталог шаблонов</h1>
+	<h1 class="visually-hidden">Каталог шаблонов</h1>
 	  <section>
-	    <h2 style="display: none">Наши лучшие предложения</h2>
+	    <h2 class="visually-hidden">Наши лучшие предложения</h2>
 	    <p>СТОИМОСТЬ:</p>
 	    <!-- Здесь будет форма -->
 	    <p>СОРТИРОВАТЬ:</p>
@@ -36,17 +36,56 @@
 		  <li><a href="#">ПО ТИПУ</a></li>
 		  <li><a href="#">ПО НАЗВАНИЮ</a></li>
 		  <li>
-		    <a href="#"><span style="display: none">Сортировка по возрастанию</span></a>
+		    <a href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
 		  </li>
 		  <li>
-		    <a href="#"><span style="display: none">Сортировка по убыванию</span></a>
+		    <a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
 		  </li>
 	    </ul>
-	    <p>СЕТКА:</p>
-	    <!-- Здесь будет форма -->
-	    <p>ОСОБЕННОСТИ:</p>
-	    <!-- Здесь будет форма -->
-	    <h2 style="display: none">Макеты сайтов</h2>
+	    <form action="https://echo.htmlacademy.ru" method="post">
+		  <p><b>СЕТКА:</b></p>
+		  <ul>
+		    <li>
+			  <input type="radio" name="grid" id="adaptive_grid" value="adaptive" checked>
+			  <label for="adaptive_grid">Адаптивная</label>
+			</li>
+			<li>
+			  <input type="radio" name="grid" id="fixed_grid" value="fixed">
+			  <label for="fixed_grid">Фиксированная</label>
+			</li>
+			<li>
+			  <input type="radio" name="grid" id="rubber_grid" value="rubber">
+			  <label for="rubber_grid">Резиновая</label>
+			</li>
+		  </ul>
+
+		  <p><b>ОСОБЕННОСТИ:</b></p>
+		  <ul>
+		    <li>
+			  <input type="checkbox" name="slider" id="properties-of-slider" checked>
+			  <label for="properties-of-slider">Слайдер</label>
+			</li>
+			<li>
+			  <input type="checkbox" name="block" id="properties-of-block">
+			  <label for="properties-of-block">Блок преимуществ</label>
+			</li>
+			<li>
+			  <input type="checkbox" name="news" id="properties-of-news" checked>
+			  <label for="properties-of-news">Новости</label>
+			</li>
+			<li>
+			  <input type="checkbox" name="gallery" id="properties-of-gallery">
+			  <label for="properties-of-gallery">Галерея</label>
+			</li>
+			<li>
+			  <input type="checkbox" name="basket" id="properties-of-basket">
+			  <label for="properties-of-basket">Корзина</label>
+			</li>
+		  </ul>
+		  
+		  <a href="#"><b>ПОКАЗАТЬ</b></a>
+		</form>
+	    <h2 class="visually-hidden">Макеты сайтов</h2>
 	    <ul>
 		  <li>
 		    <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седоны">
@@ -96,14 +135,14 @@
 	<footer>
 	  <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда к офису студии Нёрдс">
 	  <section>
-	    <h2 style="display: none">Контакты</h2>
+	    <h2 class="visually-hidden">Контакты</h2>
 	    <p>NЁRDS DESIGN STUDIO</p>
 		<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
 		<p><a href="tel:88124502525">тел. +7 (812) 275-75-75</a></p>
 		<a href="#">НАПИШИТЕ НАМ</a>
 	  </section>
 	  <section>
-	    <h2 style="display: none">Мы в социальных сетях</h2>
+	    <h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <div>
 		  <ul>
 		    <li><a href="#">Вконтакте</a></li>
@@ -117,5 +156,21 @@
 		</div>
 	  </section>
 	</footer>
+	<!-- Здесь начинается форма отправки -->
+	<section>
+	  <h2>Напишите нам</h2>
+	  <form action="https://echo.htmlacademy.ru" method="post">
+	    <label for="user"><b>Ваше имя:</b></label>
+		<input type="text" name="user" id="user" placeholder="Имя Фамилия">
+		
+		<label for="e-mail"><b>Ваш e-mail:</b></label>
+		<input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
+		
+		<p><b>Текст письма:</b></p>
+		<textarea cols="71" rows="5" placeholder="В свободной форме"></textarea>
+		
+		<button type="submit">ОТПРАВИТЬ</button>
+	  </form>
+	</section>
   </body>
 </html>
