@@ -11,14 +11,14 @@
 		  <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
 		</a>
 		<ul>
-		  <li><a href="#">СТУДИЯ</a></li>
-		  <li><a href="#">КЛИЕНТЫ</a></li>
-		  <li><a href="catalog.html">МАГАЗИН</a></li>
-		  <li><a href="#">КОНТАКТЫ</a></li>
+		  <li><a href="#">Студия</a></li>
+		  <li><a href="#">Клиенты</a></li>
+		  <li><a href="catalog.html">Магазин</a></li>
+		  <li><a href="#">Контакты</a></li>
 		</ul>
 		<ul>
 		  <li>
-		    <button type="button">КОРЗИНА</button>
+		    <button type="button">Корзина</button>
 		  </li>
 		</ul>
 	  </nav>
@@ -28,98 +28,104 @@
 	<h1 class="visually-hidden">Каталог шаблонов</h1>
 	  <section>
 	    <h2 class="visually-hidden">Наши лучшие предложения</h2>
-	    <p>СТОИМОСТЬ:</p>
-	    <!-- Здесь будет форма -->
-	    <p>СОРТИРОВАТЬ:</p>
-	    <ul>
-		  <li><a href="#">ПО ЦЕНЕ</a></li>
-		  <li><a href="#">ПО ТИПУ</a></li>
-		  <li><a href="#">ПО НАЗВАНИЮ</a></li>
-		  <li>
-		    <a href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
-		  </li>
-		  <li>
-		    <a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
-		  </li>
-	    </ul>
-	    <form action="https://echo.htmlacademy.ru" method="post">
-		  <p><b>СЕТКА:</b></p>
-		  <ul>
-		    <li>
-			  <input type="radio" name="grid" id="adaptive_grid" value="adaptive" checked>
-			  <label for="adaptive_grid">Адаптивная</label>
-			</li>
-			<li>
-			  <input type="radio" name="grid" id="fixed_grid" value="fixed">
-			  <label for="fixed_grid">Фиксированная</label>
-			</li>
-			<li>
-			  <input type="radio" name="grid" id="rubber_grid" value="rubber">
-			  <label for="rubber_grid">Резиновая</label>
-			</li>
-		  </ul>
+		<div>
+		  <form action="https://echo.htmlacademy.ru" method="get">
+	        <p>Стоимость:</p>
+	          <label for="min-cost">От</label>
+			  <input type="number" name="min-cost" id="min-cost" value="0">
+			  <label for="max-cost">До</label>
+			  <input type="number" name="max-cost" id="max-cost" value="15000">
+	        <p>Сортировать:</p>
+	        <ul>
+		      <li><a href="#">По цене</a></li>
+		      <li><a href="#">По типу</a></li>
+		      <li><a href="#">По названию</a></li>
+		      <li>
+		        <a href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
+		      </li>
+		      <li>
+		        <a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
+		      </li>
+	        </ul>
+	      
+		    <p><b>Сетка:</b></p>
+		    <ul>
+		      <li>
+			    <input type="radio" name="grid" id="adaptive-grid" value="adaptive" checked>
+			    <label for="adaptive-grid">Адаптивная</label>
+			  </li>
+			  <li>
+			    <input type="radio" name="grid" id="fixed-grid" value="fixed">
+			    <label for="fixed-grid">Фиксированная</label>
+			  </li>
+			  <li>
+			    <input type="radio" name="grid" id="rubber-grid" value="rubber">
+			    <label for="rubber-grid">Резиновая</label>
+			  </li>
+		    </ul>
 
-		  <p><b>ОСОБЕННОСТИ:</b></p>
-		  <ul>
-		    <li>
-			  <input type="checkbox" name="slider" id="properties-of-slider" checked>
-			  <label for="properties-of-slider">Слайдер</label>
-			</li>
-			<li>
-			  <input type="checkbox" name="block" id="properties-of-block">
-			  <label for="properties-of-block">Блок преимуществ</label>
-			</li>
-			<li>
-			  <input type="checkbox" name="news" id="properties-of-news" checked>
-			  <label for="properties-of-news">Новости</label>
-			</li>
-			<li>
-			  <input type="checkbox" name="gallery" id="properties-of-gallery">
-			  <label for="properties-of-gallery">Галерея</label>
-			</li>
-			<li>
-			  <input type="checkbox" name="basket" id="properties-of-basket">
-			  <label for="properties-of-basket">Корзина</label>
-			</li>
-		  </ul>
+		    <p><b>Особенности:</b></p>
+		    <ul>
+		      <li>
+			    <input type="checkbox" name="slider" id="properties-of-slider" checked>
+			    <label for="properties-of-slider">Слайдер</label>
+			  </li>
+			  <li>
+			    <input type="checkbox" name="block" id="properties-of-block">
+			    <label for="properties-of-block">Блок преимуществ</label>
+			  </li>
+			  <li>
+			    <input type="checkbox" name="news" id="properties-of-news" checked>
+			    <label for="properties-of-news">Новости</label>
+			  </li>
+			  <li>
+			    <input type="checkbox" name="gallery" id="properties-of-gallery">
+			    <label for="properties-of-gallery">Галерея</label>
+			  </li>
+			  <li>
+			    <input type="checkbox" name="basket" id="properties-of-basket">
+			    <label for="properties-of-basket">Корзина</label>
+			  </li>
+		    </ul>
 		  
-		  <a href="#"><b>ПОКАЗАТЬ</b></a>
-		</form>
+		    <a href="#"><b>Показать</b></a>
+		  </form>
+		</div>
 	    <h2 class="visually-hidden">Макеты сайтов</h2>
 	    <ul>
 		  <li>
 		    <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седоны">
-			<a href="#"><h3>SEDONA</h3></a>
+			<a href="#"><h3>Sedona</h3></a>
 			<p>Информационный сайт для туристов</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
 		  <li>
 		    <img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink">
-			<a href="#"><h3>PINK APP</h3></a>
+			<a href="#"><h3>Pink App</h3></a>
 			<p>Продуктовый лендинг приложения для iOS и Android</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
 		  <li>
 		    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Барбершопа">
-			<a href="#"><h3>BARBERSHOP</h3></a>
+			<a href="#"><h3>Barbershop</h3></a>
 			<p>Сайт салона красоты. Для мужчин, да.</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
 		  <li>
 		    <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Мишки">
-			<a href="#"><h3>MISHKA</h3></a>
+			<a href="#"><h3>Mishka</h3></a>
 			<p>Интернет-магазин вязаных игрушек</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
 		  <li>
 		    <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет Aplus">
-			<a href="#"><h3>APLUS</h3></a>
+			<a href="#"><h3>Aplus</h3></a>
 			<p>Лендинг курсов повышения квалификации</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
 		  <li>
 		    <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваста">
-			<a href="#"><h3>КВАСТ</h3></a>
+			<a href="#"><h3>Кваст</h3></a>
 			<p>Промо-сайт производителя крафтового кваса</p>
 			<a href="#">9 900 РУБ.</a>
 		  </li>
@@ -136,23 +142,23 @@
 	  <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда к офису студии Нёрдс">
 	  <section>
 	    <h2 class="visually-hidden">Контакты</h2>
-	    <p>NЁRDS DESIGN STUDIO</p>
+	    <p>Nёrds Design Studio</p>
 		<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
 		<p><a href="tel:88124502525">тел. +7 (812) 275-75-75</a></p>
-		<a href="#">НАПИШИТЕ НАМ</a>
+		<a href="#">Напишите нам</a>
 	  </section>
 	  <section>
 	    <h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <div>
 		  <ul>
 		    <li>
-			  <a href="#"><p class="visually-hidden">Вконтакте</p></a>
+			  <a href="#"><span class="visually-hidden">Вконтакте</span></a>
 			</li>
             <li>
-			  <a href="#"><p class="visually-hidden">Фейсбук</p></a>
+			  <a href="#"><span class="visually-hidden">Фейсбук</span></a>
 			</li>
             <li>
-			  <a href="#"><p class="visually-hidden">Инстаграм</p></a>
+			  <a href="#"><span class="visually-hidden">Инстаграм</span></a>
 			</li>
 		  </ul>
 		</div>
@@ -175,7 +181,7 @@
 		<p><b>Текст письма:</b></p>
 		<textarea cols="71" rows="5" placeholder="В свободной форме"></textarea>
 		
-		<button type="submit">ОТПРАВИТЬ</button>
+		<button type="submit">Отправить</button>
 	  </form>
 	</section>
   </body>
