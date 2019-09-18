@@ -25,7 +25,7 @@
 	  <h1 class="visually-hidden">Студия</h1>
 	  <article>
 	    <section>
-		  <h2 class="visually-hidden">Лозунг Нёрдса(1)</h2>
+		  <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
 		  <p>Долго, дорого, <br> скрупулезно.</p>
 		  <p>Математически выверенный дизайн <br>
 		  для вашего сайта или мобильного приложения.</p>
@@ -33,19 +33,27 @@
 		</section>
 		<!-- Тут вложенны остальные два слайды -->
 		<section>
-		  <h2 class="visually-hidden">Лозунг Нёрдса(2)</h2>
+		  <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
 		  <p>Любим математику <br> как никто другой</p>
 		  <p>Никакого креатива, только математические формулы <br> 
 		  для расчета идеальных пропорций.</p>
 		  <a href="#">Узнать больше</a>
 		</section>
 		<section> 
-		  <h2 class="visually-hidden">Лозунг Нёрдса(3)</h2>
+		  <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
 		  <p>Только ночь, <br> только хардкор</p>
 		  <p>Работать днем, как все? Мы против этого <br>
 		  Ближе к полуночи работа только начинается.</p>
 		  <a href="#">Узнать больше</a>
 		</section>
+		<input type="radio" name="switch" id="slider-1" checked>
+		<label for="slider-1">Первый слайд</label>
+		
+		<input type="radio" name="switch" id="slider-2">
+		<label for="slider-2">Второй слайд</label>
+			
+		<input type="radio" name="switch" id="slider-3">
+		<label for="slider-3">Третий слайд</label>
 	  </article>
 	  <section>
 	    <h2 class="visually-hidden">Варианты заказов</h2>
@@ -145,14 +153,14 @@
 	<section>
 	  <h2>Напишите нам</h2>
 	  <form action="https://echo.htmlacademy.ru" method="post">
-	    <label for="user"><b>Ваше имя:</b></label>
-		<input type="text" name="user" id="user" placeholder="Имя Фамилия">
+	    <label for="user-name"><b>Ваше имя:</b></label>
+		<input type="text" name="user" id="user-name" placeholder="Имя Фамилия">
 		
-		<label for="e-mail"><b>Ваш e-mail:</b></label>
-		<input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
+		<label for="user-email"><b>Ваш e-mail:</b></label>
+		<input type="email" name="e-mail" id="user-email" placeholder="email@example.com">
 		
-		<p><b>Текст письма:</b></p>
-		<textarea cols="71" rows="5" placeholder="В свободной форме"></textarea>
+		<label for="user-text"><b>Текст письма:</b></label>
+		<textarea name="letter-text" id="user-text" cols="71" rows="5" placeholder="В свободной форме" autofocus></textarea>
 		
 		<button type="submit">Отправить</button>
 	  </form>
