@@ -48,8 +48,8 @@
 			<!-- Тут расположены ползунки -->
 			<div>
 			  <div><!-- Полоска ползунка --></div>
-			  <img src="img/filter-button.png" width="20" height="23" alt="Левый ползунок">
-			  <img src="img/filter-button.png" width="20" height="23" alt="Правый ползунок">
+			  <button type="button">Левый ползунок</button>
+			  <button type="button">Правый ползунок</button>
 			</div>
 			
 	        <label for="min-cost">От</label>
@@ -182,14 +182,14 @@
 	<section>
 	  <h2>Напишите нам</h2>
 	  <form action="https://echo.htmlacademy.ru" method="post">
-	    <label for="user"><b>Ваше имя:</b></label>
-		<input type="text" name="user" id="user" placeholder="Имя Фамилия" required>
+	    <label for="user-name"><b>Ваше имя:</b></label>
+		<input type="text" name="user" id="user-name" placeholder="Имя Фамилия" required>
 		
-		<label for="e-mail"><b>Ваш e-mail:</b></label>
-		<input type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+		<label for="user-email"><b>Ваш e-mail:</b></label>
+		<input type="email" name="e-mail" id="user-email" placeholder="email@example.com" required>
 		
-		<p><b>Текст письма:</b></p>
-		<textarea cols="71" rows="5" placeholder="В свободной форме"></textarea>
+		<label for="user-text"><b>Текст письма:</b></label>
+		<textarea name="letter-text" id="user-text" cols="71" rows="5" placeholder="В свободной форме" autofocus></textarea>
 		
 		<button type="submit">Отправить</button>
 	  </form>
