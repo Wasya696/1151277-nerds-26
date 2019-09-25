@@ -5,10 +5,10 @@
     <title>Каталог Нёрдса</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/nerds-style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
 	  <nav>
 	    <a href="index.html">
 		  <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
@@ -17,7 +17,7 @@
 		  <ul class="site-navigation">
 		    <li><a href="#">Студия</a></li>
 		    <li><a href="#">Клиенты</a></li>
-		    <li><a href="catalog.html">Магазин</a></li>
+		    <li><a class="active">Магазин</a></li>
 		    <li><a href="#">Контакты</a></li>
 		  </ul>
 		  <div class="basket">
@@ -32,7 +32,7 @@
 	<h1 class="visually-hidden">Каталог шаблонов</h1>
 	  <section class="filters">
 	    <h2 class="visually-hidden">Фильтр</h2>
-		<div class="filters-options">
+		<div class="filters-option">
 		  <form action="https://echo.htmlacademy.ru" method="get">
 		    <fieldset>
 			  <legend class="cost">Стоимость:</legend>
@@ -54,15 +54,15 @@
 		      <legend class="grid">Сетка:</legend>
 		      <ul>
 		        <li>
-			      <input type="radio" name="grid" id="adaptive-grid" value="adaptive" checked>
+			      <input class="filter-input-radio" type="radio" name="grid" id="adaptive-grid" value="adaptive" checked disabled>
 			      <label for="adaptive-grid">Адаптивная</label>
 			    </li>
 			    <li>
-			      <input type="radio" name="grid" id="fixed-grid" value="fixed">
+			      <input class="filter-input-radio" type="radio" name="grid" id="fixed-grid" value="fixed">
 			      <label for="fixed-grid">Фиксированная</label>
 			    </li>
 			    <li>
-			      <input type="radio" name="grid" id="rubber-grid" value="rubber">
+			      <input class="filter-input-radio" type="radio" name="grid" id="rubber-grid" value="rubber">
 			      <label for="rubber-grid">Резиновая</label>
 			    </li>
 		      </ul>
@@ -72,23 +72,23 @@
 		      <legend class="properties">Особенности:</legend>
 		      <ul>
 		        <li>
-			      <input type="checkbox" name="slider" id="properties-of-slider" checked>
+			      <input class="filter-input-checkbox" type="checkbox" name="slider" id="properties-of-slider" checked disabled>
 			      <label for="properties-of-slider">Слайдер</label>
 			    </li>
 			    <li>
-			      <input type="checkbox" name="block" id="properties-of-block">
+			      <input class="filter-input-checkbox" type="checkbox" name="block" id="properties-of-block">
 			      <label for="properties-of-block">Блок преимуществ</label>
 			    </li>
 			    <li>
-			      <input type="checkbox" name="news" id="properties-of-news" checked>
+			      <input class="filter-input-checkbox" type="checkbox" name="news" id="properties-of-news" checked>
 			      <label for="properties-of-news">Новости</label>
 			    </li>
 			    <li>
-			      <input type="checkbox" name="gallery" id="properties-of-gallery">
+			      <input class="filter-input-checkbox" type="checkbox" name="gallery" id="properties-of-gallery">
 			      <label for="properties-of-gallery">Галерея</label>
 			    </li>
 			    <li>
-			      <input type="checkbox" name="basket" id="properties-of-basket">
+			      <input class="filter-input-checkbox" type="checkbox" name="basket" id="properties-of-basket">
 			      <label for="properties-of-basket">Корзина</label>
 			    </li>
 		      </ul>
@@ -118,39 +118,51 @@
 	      <ul>
 		    <li>
 		      <img src="img/img-sedona.jpg" width="360" height="576" alt="Макет Седоны">
-			  <a href="#"><h3>Sedona</h3></a>
-			  <p>Информационный сайт для туристов</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Sedona</h3></a>
+			    <p>Информационный сайт для туристов</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		    <li>
 		      <img src="img/img-pink.jpg" width="360" height="576" alt="Макет Pink">
-			  <a href="#"><h3>Pink App</h3></a>
-			  <p>Продуктовый лендинг приложения для iOS и Android</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Pink App</h3></a>
+			    <p>Продуктовый лендинг приложения для iOS и Android</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		    <li>
 		      <img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет Барбершопа">
-			  <a href="#"><h3>Barbershop</h3></a>
-			  <p>Сайт салона красоты. Для мужчин, да.</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Barbershop</h3></a>
+			    <p>Сайт салона красоты. Для мужчин, да.</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		    <li>
 		      <img src="img/img-mishka.jpg" width="360" height="576" alt="Макет Мишки">
-			  <a href="#"><h3>Mishka</h3></a>
-			  <p>Интернет-магазин вязаных игрушек</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Mishka</h3></a>
+			    <p>Интернет-магазин вязаных игрушек</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		    <li>
 		      <img src="img/img-aplus.jpg" width="360" height="576" alt="Макет Aplus">
-			  <a href="#"><h3>Aplus</h3></a>
-			  <p>Лендинг курсов повышения квалификации</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Aplus</h3></a>
+			    <p>Лендинг курсов повышения квалификации</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		    <li>
 		      <img src="img/img-kvast.jpg" width="360" height="576" alt="Макет Кваста">
-			  <a href="#"><h3>Кваст</h3></a>
-			  <p>Промо-сайт производителя крафтового кваса</p>
-			  <a class="price" href="#">9 900 РУБ.</a>
+			  <div class="description">
+			    <a href="#"><h3>Кваст</h3></a>
+			    <p>Промо-сайт производителя крафтового кваса</p>
+			    <a class="price" href="#">9 900 РУБ.</a>
+			  </div>
 		    </li>
 		  </ul>
 		</div>
@@ -178,13 +190,13 @@
 	    <div class="social-network">
 		  <ul class="social-list">
 		    <li>
-			  <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+			  <a class="social-link" href="#"><span class="visually-hidden">Вконтакте</span></a>
 			</li>
             <li>
-			  <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+			  <a class="social-link" href="#"><span class="visually-hidden">Фейсбук</span></a>
 			</li>
             <li>
-			  <a href="#"><span class="visually-hidden">Инстаграм</span></a>
+			  <a class="social-link" href="#"><span class="visually-hidden">Инстаграм</span></a>
 			</li>
 		  </ul>
 		</div>

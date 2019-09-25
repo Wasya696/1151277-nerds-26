@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #eee;
+}
+
+.wrapper {
+  text-transform: uppercase;
+}
+
+.wrapper a {
+  color: black;
+  font-weight: 500;
+}
+
+.site-navigation a[href]:hover, .basket a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus, .basket a:focus,
+.site-navigation a:active, .basket a:active {
+  color: #bdbdbd;
+}
+
+.site-navigation, .services-list {
+  list-style: none;
+}
+
+.active {
+  border-bottom: 2px solid #fb565a;
+}
+
+header b {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+main li {
+  list-style: none
+}
+
+.services-list h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-item-one::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-image: url(img/service-1.png);
+}
+
+.services-item-two::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-image: url(img/service-2.png);
+}
+
+.services-item-three::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
+  background-image: url(img/service-3.png);
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
+
+.button:focus,
+.button:active {
+  color: rgba(255, 255, 255, .3);
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, .1) inset;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:focus,
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:focus,
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filters-option label {
+  color: #283136;
+}
+
+.filter-input-radio:disabled + label,
+.filter-input-checkbox:disabled + label {
+  color: #ededed;
+}
+
+.filter-input-radio:hover + label,
+.filter-input-checkbox:hover + label {
+  color: black;
+}
+
+.filters button, .sorting {
+  text-transform: uppercase;
+}
+
+.filters button {
+  background-color: #eee;
+  border: 0;
+}
+
+.filters button:focus,
+.filters button:active {
+  background-color: #d5d5d5;
+  color: #c1c1c1;
+}
+
+.filters button:hover {
+  background-color: #dfdfdf;
+}
+
+.sorting b {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.sorting a {
+  font-size: 14px;
+}
+
+.sorting a:hover {
+  color: #8d8d8d;
+}
+
+.description {
+  background-color: #eee;
+}
+
+.our-partners h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.our-partners p {
+  line-height: 18px;
+  color: #666;
+}
+
+.our-partners .price {
+  background-color: #fb565a;
+  color: white;
+  line-height: 18px;
+}
+
+.our-partners .price:hover {
+  background-color: #e74246;
+}
+
+.our-partners .price:active {
+  background-color: #d7373b;
+}
+
+.pagination a {
+  background-color: #eee;
+  color: black;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.pagination a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination a:focus {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+}
+
+.footer-social p {
+  line-height: 22px;	
+}
+
+.social-list li {
+  list-style: none;
+}
+
+.social-link {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-link:focus,
+.social-link:active {
+  background-color: #d7373b;
+}
+
+.social-link:hover {
+  background-color: #e74246;
+}
+
+.be-friends h3 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.form {
+  display: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
