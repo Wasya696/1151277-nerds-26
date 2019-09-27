@@ -38,7 +38,7 @@ a {
   list-style: none;
 }
 
-.active {
+.site-navigation .active {
   border-bottom: 2px solid #fb565a;
 }
 
@@ -48,7 +48,29 @@ header b {
 }
 
 main li {
-  list-style: none
+  list-style: none;
+}
+
+.sliders {
+  background-color: #eee;
+}
+
+.slider-one {
+  background: url(img/slide-1.png) no-repeat;
+}
+
+.slider-two {
+  background: url(img/slide-2.png) no-repeat;
+}
+
+.slider-three {
+  background: url(img/slide-3.png) no-repeat;
+}
+
+section[class*="slider"] h3 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
 }
 
 .services-list h3 {
@@ -83,7 +105,7 @@ main li {
 }
 
 .button {
-  font-size: 16px;
+  font-size: inherit;
   line-height: 18px;
   color: white;
   text-transform: uppercase;
@@ -127,6 +149,37 @@ main li {
   background-color: #eab534;
 }
 
+.description h3 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.description b {
+  font-size: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.statistics b {
+  text-transform: uppercase;
+}
+
+.percentages {
+  letter-spacing: -2.5px;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.percentages sup {
+  font-size: 30px;
+}
+
+.details {
+  line-height: 18px;
+}
+
 .filters legend {
   font-size: 18px;
   line-height: 30px;
@@ -136,6 +189,12 @@ main li {
 
 .filters-option label {
   color: #283136;
+}
+
+.cost-range input {
+  line-height: 22px;
+  background-color: #eee;
+  border: 2px solid #eee;
 }
 
 .filter-input-radio:disabled + label,
@@ -174,12 +233,20 @@ main li {
 
 .sorting a {
   font-size: 14px;
+  color: #cecece;
+}
+
+.sorting .active,
+.sorting a:focus,
+.sorting a:active {
+  color: black;
 }
 
 .sorting a:hover {
   color: #8d8d8d;
 }
 
+.our-partners
 .description {
   background-color: #eee;
 }
@@ -187,8 +254,21 @@ main li {
 .our-partners h3 {
   font-size: 18px;
   line-height: 30px;
-  color: black;
   text-transform: uppercase;
+}
+
+.our-partners a {
+  color: black;
+}
+
+.our-partners a:hover {
+  color: #fb565a;
+}
+
+.our-partners a:focus,
+.our-partners a:active {
+  color: inherit;
+  opacity: .3;
 }
 
 .our-partners p {
@@ -206,8 +286,27 @@ main li {
   background-color: #e74246;
 }
 
+.our-partners .price:hover,
 .our-partners .price:active {
   background-color: #d7373b;
+}
+
+.partners-item a {
+  opacity: .2;
+}
+
+.partners-item a:focus,
+.partners-item a:active {
+  opacity: .1;
+}
+
+.partners-item a:hover {
+  opacity: 1;
+}
+
+.address p {
+  letter-spacing: .1px;
+  line-height: 18px;
 }
 
 .pagination a {
@@ -224,7 +323,13 @@ main li {
 
 .pagination a:focus {
   background-color: #d5d5d5;
-  color: #a9a9a9;
+  box-shadow: inset 0 3px 0 0 rgba(o, 1, 1, .1);
+  opacity: .3;
+}
+
+.pagination .active {
+  background-color: white;
+  border: 3px solid #dbdbdb;
 }
 
 .footer-social p {
@@ -236,8 +341,8 @@ main li {
 }
 
 .social-link {
-  width: 80px;
-  height: 80px;
+  width: 81px;
+  height: 81px;
   display: block;
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -246,6 +351,7 @@ main li {
 .social-link:focus,
 .social-link:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, .1);
 }
 
 .social-link:hover {
