@@ -16,6 +16,15 @@ a {
   background-color: #eee;
 }
 
+.main-header a:hover {
+  opacity: .8;
+}
+
+.main-header a:focus,
+.main-header a:active {
+  opacity: .3;
+}
+
 .wrapper {
   text-transform: uppercase;
 }
@@ -112,6 +121,10 @@ section[class*="slider"] h3 {
   background-color: #fb565a;
 }
 
+.button:hover {
+  background-color: #e74246;
+}
+
 .button:focus,
 .button:active {
   color: rgba(255, 255, 255, .3);
@@ -119,12 +132,12 @@ section[class*="slider"] h3 {
   box-shadow: 0 3px rgba(0, 0, 0, .1) inset;
 }
 
-.button:hover {
-  background-color: #e74246;
-}
-
 .button-green {
   background-color: #00ca74;
+}
+
+.button-green:hover {
+  background-color: #00bc6c;
 }
 
 .button-green:focus,
@@ -132,21 +145,17 @@ section[class*="slider"] h3 {
   background-color: #00aa62;
 }
 
-.button-green:hover {
-  background-color: #00bc6c;
-}
-
 .button-yellow {
   background-color: #efc84a;
+}
+
+.button-yellow:hover {
+  background-color: #eab534;
 }
 
 .button-yellow:focus,
 .button-yellow:active {
   background-color: #e5a722;
-}
-
-.button-yellow:hover {
-  background-color: #eab534;
 }
 
 .description h3 {
@@ -189,6 +198,7 @@ section[class*="slider"] h3 {
 
 .filters-option label {
   color: #283136;
+  line-height: 20px;
 }
 
 .cost-range input {
@@ -197,14 +207,41 @@ section[class*="slider"] h3 {
   border: 2px solid #eee;
 }
 
-.filter-input-radio:disabled + label,
-.filter-input-checkbox:disabled + label {
-  color: #ededed;
+.cost-range input:hover {
+  background-color: white;
+  border: 2px solid #b4b9bb;
+  
+}
+
+.cost-range input:focus,
+.cost-range input:active {
+  outline: none;
+  background-color: white;
+  color: #444;
+  border: 2px solid black;
+}
+
+.cost-range input:invalid {
+  background-color: white;
+  border: 2px solid #e74246;
+}
+
+.filter-input-radio + label,
+.filter-input-checkbox + label {
+  color: #283136;
 }
 
 .filter-input-radio:hover + label,
 .filter-input-checkbox:hover + label {
   color: black;
+}
+
+.filter-input-radio:focus + label,
+.filter-input-radio:active + label,
+.filter-input-checkbox:focus + label,
+.filter-input-checkbox:active + label {
+  color: #283136;
+  opacity: .3;
 }
 
 .filters button, .sorting {
@@ -216,14 +253,14 @@ section[class*="slider"] h3 {
   border: 0;
 }
 
+.filters button:hover {
+  background-color: #dfdfdf;
+}
+
 .filters button:focus,
 .filters button:active {
   background-color: #d5d5d5;
   color: #c1c1c1;
-}
-
-.filters button:hover {
-  background-color: #dfdfdf;
 }
 
 .sorting b {
@@ -236,18 +273,17 @@ section[class*="slider"] h3 {
   color: #cecece;
 }
 
+.sorting a:hover {
+  color: #8d8d8d;
+}
+
 .sorting .active,
 .sorting a:focus,
 .sorting a:active {
   color: black;
 }
 
-.sorting a:hover {
-  color: #8d8d8d;
-}
-
-.our-partners
-.description {
+.our-partners .description {
   background-color: #eee;
 }
 
@@ -261,12 +297,12 @@ section[class*="slider"] h3 {
   color: black;
 }
 
-.our-partners a:hover {
+.our-partners a:nth-child(1):hover {
   color: #fb565a;
 }
 
-.our-partners a:focus,
-.our-partners a:active {
+.our-partners a:nth-child(1):focus,
+.our-partners a:nth-child(1):active {
   color: inherit;
   opacity: .3;
 }
@@ -286,22 +322,23 @@ section[class*="slider"] h3 {
   background-color: #e74246;
 }
 
-.our-partners .price:hover,
+.our-partners .price:focus,
 .our-partners .price:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, .1);
 }
 
 .partners-item a {
   opacity: .2;
 }
 
+.partners-item a:hover {
+  opacity: 1;
+}
+
 .partners-item a:focus,
 .partners-item a:active {
   opacity: .1;
-}
-
-.partners-item a:hover {
-  opacity: 1;
 }
 
 .address p {
@@ -321,9 +358,10 @@ section[class*="slider"] h3 {
   background-color: #dfdfdf;
 }
 
-.pagination a:focus {
+.pagination a:focus,
+.pagination a:active {
   background-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 rgba(o, 1, 1, .1);
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, .1);
   opacity: .3;
 }
 
@@ -332,7 +370,11 @@ section[class*="slider"] h3 {
   border: 3px solid #dbdbdb;
 }
 
-.footer-social p {
+.address p, .address .phone {
+  color: #666;
+}
+
+.footer-social {
   line-height: 22px;	
 }
 
@@ -348,14 +390,14 @@ section[class*="slider"] h3 {
   border-radius: 50%;
 }
 
+.social-link:hover {
+  background-color: #e74246;
+}
+
 .social-link:focus,
 .social-link:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, .1);
-}
-
-.social-link:hover {
-  background-color: #e74246;
 }
 
 .be-friends h3 {
