@@ -22,7 +22,7 @@
 		      <li><a href="#">Контакты</a></li>
 		    </ul>
 		    <div class="basket">
-		      <img class="basket-icon" src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+		      <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" style="margin-right: 25px; align-self: center;">
 		      <a href="#">Корзина</a>
 		    </div>
 		  </div>
@@ -32,38 +32,38 @@
 	<main>
 	  <h1 class="visually-hidden">Студия Нёрдс</h1>
 	  <article class="sliders">
+	    <h2 class="visually-hidden">Преимущества</h2>
 	    <div class="container">
-	      <section class="slider-one">
-		    <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
-		    <h3>Долго, дорого, <br> скрупулезно.</h3>
-		    <p>Математически выверенный дизайн <br>
-		    для вашего сайта или мобильного приложения.</p>
-		    <a class="button" href="#">Узнать больше</a>
-		  </section>
-		  <!-- Тут вложенны остальные два слайды -->
-		  <section class="slider-two">
-		    <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
-		    <h3>Любим математику <br> как никто другой</h3>
-		    <p>Никакого креатива, только математические формулы <br> 
-		    для расчета идеальных пропорций.</p>
-		    <a class="button" href="#">Узнать больше</a>
-		  </section>
-		  <section class="slider-three"> 
-		    <h2 class="visually-hidden">Студия дизайна Нёрдс</h2>
-		    <h3>Только ночь, <br> только хардкор</h3>
-		    <p>Работать днем, как все? Мы против этого <br>
-		    Ближе к полуночи работа только начинается.</p>
-		    <a class="button" href="#">Узнать больше</a>
-		  </section>
+		  <input class="visually-hidden" type="radio" name="toggle" id="slider-1" checked>
+		  <input class="visually-hidden" type="radio" name="toggle" id="slider-2">
+		  <input class="visually-hidden" type="radio" name="toggle" id="slider-3">
+		  <div class="slider-controls">
+		    <label class="slider-controls-item slider-controls-item-1" for="slider-1">Первый слайд</label>
+			<label class="slider-controls-item slider-controls-item-2" for="slider-2">Второй слайд</label>
+			<label class="slider-controls-item slider-controls-item-3" for="slider-3">Третий слайд</label> 
+		  </div>
+		  <ul class="slider-list">
+	        <li class="slider-item">
+		      <h3>Долго, дорого, <br> скрупулезно.</h3>
+		      <p>Математически выверенный дизайн <br>
+		      для вашего сайта или мобильного приложения.</p>
+		      <a class="button" href="#">Узнать больше</a>
+		    </li>
+		    <!-- Тут вложенны остальные два слайды -->
+		    <li class="slider-item">
+		      <h3>Любим математику <br> как никто другой</h3>
+		      <p>Никакого креатива, только математические формулы <br> 
+		      для расчета идеальных пропорций.</p>
+		      <a class="button" href="#">Узнать больше</a>
+		    </li>
+		    <li class="slider-item"> 
+		      <h3>Только ночь, <br> только хардкор</h3>
+		      <p>Работать днем, как все? Мы против этого <br>
+		      Ближе к полуночи работа только начинается.</p>
+		      <a class="button" href="#">Узнать больше</a>
+		    </li>
+		  </ul>
 		</div>
-		<input type="radio" name="switch" id="slider-1" checked>
-		<label for="slider-1">Первый слайд</label>
-		
-		<input type="radio" name="switch" id="slider-2">
-		<label for="slider-2">Второй слайд</label>
-			
-		<input type="radio" name="switch" id="slider-3">
-		<label for="slider-3">Третий слайд</label>
 	  </article>
 	  <section class="partners">
 	    <h2 class="visually-hidden">Наши услуги</h2>
@@ -95,10 +95,10 @@
 		    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
 		    превыше креатива. Работаем не покладая рук, как роботы.</p>
 		    <b>Выполняем заказы на разработку:</b>
-		    <ul>
-		      <li>Веб-сайтов любой сложности</li>
-	          <li>Мобильных приложений для iOS и Android</li>
-		      <li>Слайдшоу и видео для корпоративных презентаций</li>
+		    <ul class="description-list">
+		      <li class="description-item">Веб-сайтов любой сложности</li>
+	          <li class="description-item">Мобильных приложений для iOS и Android</li>
+		      <li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
 		    </ul>
 		  </div>
 		  <div class="statistics">
@@ -126,16 +126,16 @@
 		<div class="container">
 	      <ul class="partners-list">
 		    <li class="partners-item">
-		      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src=  "img/logo-html-academy.png" width="260" height="180" alt="Логотип HTML Academy"></a>
+		      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src=  "img/logo-html-academy.png" width="199" height="68" alt="Логотип HTML Academy"></a>
 		    </li>
 		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-barbershop.png" width="260" height="180" alt=  "Логотип Барбершопа"></a>
+		      <a href="#"><img src="img/logo-barbershop.png" width="209" height="90" alt=  "Логотип Барбершопа"></a>
 		    </li>
 		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-pink.png" width="260" height="180" alt="Логотип Pink"></a>  
+		      <a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>  
 		    </li>
 		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-mishka.png" width="260" height="180" alt="Логотип Мишки"></a>  
+		      <a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Мишки"></a>  
 		    </li>
 		  </ul>
 		</div>
@@ -144,30 +144,44 @@
 	<footer>
 	  <section class="map">
 	    <h2 class="visually-hidden">Карта</h2>
-	    <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда к офису студии Нёрдс">
+	    <div class="container">
+	      <section class="address">
+	        <h2 class="visually-hidden">Контакты</h2>
+	        <h3>NЁRDS DESIGN STUDIO</h3>
+		    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+		    <span><a class="phone" href="tel:88124502525">тел. +7 (812) 275-75-75</a></span>
+		    <a class="button button-address" href="#">Напишите нам</a>
+		  </section>
+		</div> 
 	  </section>
-	  <div class="container">
-	    <section class="address">
-	      <h2 class="visually-hidden">Контакты</h2>
-	      <h3>NЁRDS DESIGN STUDIO</h3>
-		  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-		  <span><a class="phone" href="tel:88124502525">тел. +7 (812) 275-75-75</a></span>
-		  <a class="button" href="#">Напишите нам</a>
-	    </section>
-	  </div>
 	  <section class="footer-social">
 	    <h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <div class="container">
 	      <div class="social-network">
 		    <ul class="social-list">
-		      <li>
-			    <a class="social-link" href="#"><span class="visually-hidden">Вконтакте  </span></a>
+		      <li class="social-item">
+			    <a class="social-link" href="#">
+				  <span class="visually-hidden">Вконтакте</span>
+				  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+				    <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.  935-2.419z"/>
+				  </svg>
+				</a>
 			  </li>
-              <li>
-			    <a class="social-link" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              <li class="social-item">
+			    <a class="social-link" href="#">
+				  <span class="visually-hidden">Фейсбук</span>
+				  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+				    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4   4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+				  </svg>
+				</a>
 			  </li>
-              <li>
-			    <a class="social-link" href="#"><span class="visually-hidden">Инстаграм  </span></a>
+              <li class="social-item">
+			    <a class="social-link" href="#">
+				  <span class="visually-hidden">Инстаграм</span>
+				  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+				    <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3   3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57   3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18   18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0   0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+				  </svg>
+				</a>
 			  </li>
 		    </ul>
 		  </div>
