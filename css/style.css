@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,7 +42,7 @@ label {
 
 .catalog header {
   margin-bottom: 53px;
-  min-height: 307px;
+  padding-bottom: 117px;
 }
 
 .container {
@@ -105,6 +113,7 @@ header h1 {
   font-size: 55px;
   font-weight: 500;
   padding-top: 67px;
+  line-height: 55px;
   text-align: center;
 }
 
@@ -432,7 +441,7 @@ main li {
 
 .range-controls {
   position: relative;
-  height: 41px;
+  height: 80px;
   margin-bottom: 15px;
   padding: 0 20px;
   padding-top: 39px;
@@ -455,8 +464,8 @@ main li {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid #fff;
   background-color: #ababab;
@@ -485,9 +494,9 @@ main li {
 }
 
 .price-controls input {
-  width: 60px;
+  width: 80px;
   margin-left: 10px;
-  padding: 8px 10px;
+  padding: 8px 5px;
   font-family: inherit;
   font-size: inherit;
   text-align: center;
@@ -495,6 +504,7 @@ main li {
   border: none;
   border-radius: 5px;
   background-color: #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 .price-controls input:hover {
@@ -550,6 +560,7 @@ fieldset ul {
 }
 
 .filters label {
+  padding: 0;
   color: #283136;
   line-height: 20px;
 }
@@ -563,46 +574,43 @@ fieldset ul {
 
 .filter-input-radio + label::before {
   content: "";
-  width: 17px;
-  height: 17px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   left: 1px;
   top: -4px;
-  border: 4px solid #a6a6a6;
-  border-radius: 50%;
+  background-image: url(../img/radio-off.svg);
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
-  width: 9px;
-  height: 9px;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  left: 8px;
-  top: 3px;
-  background-color: #a6a6a6;
-  border: 1px solid #a6a6a6;
-  border-radius: 50%;
+  left: 1px;
+  top: -4px;
+  background-image: url(../img/radio-on.svg);
 }
 
 .filter-input-checkbox + label::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 23px;
   position: absolute;
   left: 0;
   top: 0;
-  border: 2px solid #a6a6a6;
-  border-radius: 3px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
-  width: 25px;
-  height: 22px;
+  width: 27px;
+  height: 23px;
   position: absolute;
-  left: 2px;
-  top: -1px;
-  background-image: url(../img/checkbox.svg);
+  left: 0;
+  top: 0;
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
 }
 
@@ -622,20 +630,19 @@ fieldset ul {
 }
 
 .filter-input-radio + label:hover::before {
-  border: 4px solid #4d4d4d;
+  background-image: url(../img/radio-off-hover.svg);
 }
 
 .filter-input-radio:checked + label:hover::after {
-  background-color: #4d4d4d;
-  border: 1px solid #4d4d4d;
+  background-image: url(../img/radio-on-hover.svg);
 }
 
 .filter-input-checkbox + label:hover::before {
-  border: 2px solid #4d4d4d;
+  background-image: url(../img/checkbox-off-hover.svg);
 }
 
 .filter-input-checkbox:checked +label:hover::after {
-  background-image: url(../img/checkbox-hover.svg);
+  background-image: url(../img/checkbox-on-hover.svg);
 }
 
 .filters button, .sorting {
@@ -728,6 +735,10 @@ fieldset ul {
   border-color: transparent transparent #cacaca;
 }
 
+.sorting-buttons .active {
+  border-color: #231f20 transparent transparent;
+}
+
 .button-down:hover {
   border-color: #a6a6a6 transparent transparent;
 }
@@ -765,12 +776,12 @@ fieldset ul {
 }
 
 .our-partners-item img {
+  display: block;
   margin-top: -6px;
-  border: 1px solid rgba(0, 1, 1, .1);
 }
 
 .our-partners .description {
-  width: 361px;
+  width: 360px;
   min-height: 165px;
   text-align: center;
   padding: 24px 0 40px;
@@ -975,13 +986,18 @@ footer {
 .map {
   margin-top: 80px;
   height: 420px;
-  background: url(../img/map.jpg) no-repeat 50% 42%;
-  background-size: cover;
+}
+
+.map iframe {
+  position: absolute;
+  width: 100%;
+  height: 420px;
 }
 
 .map .container {
   min-height: 230px;
   padding-top: 55px;
+  z-index: 2;
 }
 
 .map .address {
@@ -1010,7 +1026,8 @@ footer {
 }
 
 .footer-social {
-  padding-top: 72px;	
+  padding-top: 72px;
+  padding-bottom: 54px;
 }
 
 .footer-social .container {
@@ -1057,9 +1074,6 @@ footer {
   fill: #e37376;
 }
 
-.be-friends {
-  max-width: 400px;
-}
 .be-friends h3 {
   margin: 4px 0 11px;
   padding: 0;
