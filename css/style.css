@@ -134,12 +134,13 @@ main li {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 3;
   width: 160px;
   height: 18px;
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
+  box-sizing: content-box;
 }
 
 .slider-controls label {
@@ -614,6 +615,10 @@ fieldset ul {
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox:checked + label::before {
+  background-image: none;
+}
+
 .filter-input-radio + label:hover,
 .filter-input-checkbox + label:hover {
   color: black;
@@ -641,9 +646,13 @@ fieldset ul {
   background-image: url(../img/checkbox-off-hover.svg);
 }
 
-.filter-input-checkbox:checked +label:hover::after {
+.filter-input-checkbox:checked + label:hover::after {
   background-image: url(../img/checkbox-on-hover.svg);
 }
+
+.filter-input-checkbox:checked + label:hover::before {
+  background-image: none;
+} 
 
 .filters button, .sorting {
   text-transform: uppercase;
@@ -1087,8 +1096,126 @@ footer {
   line-height: 22px;
 }
 
-.form {
-  display: none;
+.modal {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, .7);
+}
+
+.modal-login {
+  display: block; 
+  top: 50px;
+  margin-left: 240px;
+  width: 895px;
+  z-index: 4;
+  padding: 65px 100px;
+}
+
+.modal-login h2 {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.login-form .wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form p {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form b {
+  text-transform: none;
+}
+
+.login-form input {
+  width: 335px;
+  height: 46px;
+  padding: 0 14px;
+}
+
+.login-form input:invalid,
+.login-form textarea:invalid {
+  color: #e74246;
+  border: 2px solid #e74246;
+}
+
+.login-form input,
+.login-form textarea {
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.login-form input:focus,
+.login-form input:active {
+  outline: 0;
+  color: #444;
+  border: 2px solid black;
+}
+
+.login-form textarea:focus,
+.login-form textarea:active {
+  outline: 0;
+  color: #444;
+  border: 2px solid black;
+}
+
+.login-form textarea {
+  padding: 10px 13px;
+}
+
+.login-form button {
+  margin-top: 46px;
+  margin-bottom: 18px;
+  width: 260px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+}
+
+.modal-close::before, .modal-close::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 3px;
+  top: 10px;
+  left: 2px;
+  background-color: #fecccd;
+}
+
+.modal-close:hover::before, .modal-close:hover::after {
+  background-color: #fb565a;
+}
+
+.modal-close:focus::before, .modal-close:focus::after,
+.modal-close:active::before, .modal-close:active::after {
+  background-color: #fee;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .visually-hidden:not(:focus):not(:active),
