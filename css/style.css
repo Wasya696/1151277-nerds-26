@@ -1135,6 +1135,16 @@ footer {
   box-shadow: 0 20px 40px rgba(0, 1, 1, .7);
 }
 
+.modal-login {
+  display: none; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 895px;
+  z-index: 4;
+  padding: 65px 100px;
+}
+
 .modal-window {
   display: block;
   animation-name: bounce;
@@ -1144,16 +1154,6 @@ footer {
 .modal-error {
   animation-name: shake;
   animation-duration: 0.6s;
-}
-
-.modal-login {
-  display: block; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 895px;
-  z-index: 4;
-  padding: 65px 100px;
 }
 
 .modal-login h2 {
