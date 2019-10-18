@@ -1096,35 +1096,49 @@ footer {
   line-height: 22px;
 }
 
-#keyframes bounce {
-  to {
-    transform: translateY(-2000px);
+@keyframes bounce {
+  0% {
+	top: 50%;
+    left: 50%;
+    transform: translateY(-2000px) translate(-50%, -50%);
   }
   
   70% {
-	transform: translateY(30px);
+	top: 50%;
+    left: 50%;
+    transform: translateY(30px) translate(-50%, -50%);
   }
   
   90% {
-	transform: translateY(-10px);
+	top: 50%;
+    left: 50%;
+	transform: translateY(-10px) translate(-50%, -50%);
   }
   
-  from {
-	transform: translateY(0);
+  100% {
+	top: 50%;
+    left: 50%;
+	transform: translateY(0) translate(-50%, -50%);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-	transform: translateX(0);
+	top: 50%;
+	left: 50%;
+	transform: translateX(0) translate(-50%, -50%);
   }
   
   10%, 30%, 50%, 70%, 90% {
-	transform: translateX(-10px);
+	top: 50%;
+	left: 50%;
+	transform: translateX(-10px) translate(-50%, -50%);
   }
   
   20%, 40%, 60%, 80% {
-	transform: translateX(10px);
+	top: 50%;
+	left: 50%;
+	transform: translateX(10px) translate(-50%, -50%);
   }
 }
 
@@ -1196,11 +1210,13 @@ footer {
 .login-form textarea {
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  color: #d7dcde;
 }
 
 .login-form input:hover,
 .login-form textarea:hover {
   border: 2px solid #b4b9bb;
+  color: #b4b9bb;
 }
 
 .login-form input:focus,
@@ -1221,7 +1237,7 @@ footer {
   padding: 10px 13px;
 }
 
-.login-form button {
+.login-form .button {
   margin-top: 46px;
   margin-bottom: 18px;
   width: 260px;
@@ -1229,10 +1245,11 @@ footer {
 
 .modal-close {
   position: absolute;
-  top: 28px;
-  right: -148px;
-  width: 0px;
-  height: 0px;
+  top: 78px;
+  right: 90px;
+  padding: 0;
+  width: 21px;
+  height: 21px;
   font-size: 0;
   border: 0;
   outline: 0;
