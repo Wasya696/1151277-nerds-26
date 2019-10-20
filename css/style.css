@@ -1200,8 +1200,7 @@ footer {
   padding: 0 14px;
 }
 
-.login-form input:invalid,
-.login-form textarea:invalid {
+.login-form input.error {
   color: #e74246;
   border: 2px solid #e74246;
 }

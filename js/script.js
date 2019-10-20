@@ -4,14 +4,14 @@ var popup = document.querySelector(".modal-login");
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
+var userName = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 
 var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem("userName");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -21,28 +21,43 @@ link.addEventListener("click", function(evt) {
   popup.classList.add("modal-window");
   
   if (storage) {
-	name.value = storage;
+	userName.value = storage;
 	email.focus();
   } else {
-	name.focus();
+	userName.focus();
   }
 });
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-window");
-  popup.classList.remove("modal-error");
+  userName.classList.remove("error");
+  email.classList.remove("error");
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!name.value || !email.value) {
+  if (!userName.value) {
 	evt.preventDefault();
-	popup.classList.add("modal-error");
-	console.log("Нужно ввести своё имя и электронную почту");
+	userName.classList.add("error");
+  } else if (!email.value) {
+	evt.preventDefault();
+	email.classList.add("error");
   } else {
-	if (isStorageSupport) {
-      localStorage.setItem("name", name.value);
-	}
+	  if (isStorageSupport) {
+		localStorage.setItem("userName", userName.value);
+	  }
+  }
+});
+
+userName.addEventListener("focus", function() {
+  if (userName.classList.contains("error")) {
+	userName.classList.remove("error");
+  }
+});
+
+email.addEventListener("focus", function() {
+  if (email.classList.contains("error")) {
+	email.classList.remove("error");
   }
 });
 
