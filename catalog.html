@@ -5,33 +5,31 @@
     <title>Каталог Нёрдса</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
   </head>
+  
   <body class="catalog">
     <header>
-	  <div class="container">
-	    <nav class="main-navigation">
-	      <a class="main-header-logo" href="index.html">
-		    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
-		  </a>
-		  <div class="wrapper">
-		    <ul class="site-navigation">
-		      <li><a href="#">Студия</a></li>
-		      <li><a href="#">Клиенты</a></li>
-		      <li><a class="active">Магазин</a></li>
-		      <li><a href="#">Контакты</a></li>
-		    </ul>
-		    <div class="basket">
-		      <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" style="margin-right: 25px; align-self: center;">
-		      <a href="#">Корзина</a>
-		    </div>
-		  </div>
-	    </nav>
-	    <h1>Магазин готовых шаблонов</h1>
-	  </div>
+	  <nav class="main-navigation container">
+		<a class="main-header-logo" href="index.html">
+		  <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
+		</a>
+		<ul class="site-navigation">
+		  <li><a href="#">Студия</a></li>
+		  <li><a href="#">Клиенты</a></li>
+		  <li><a class="active">Магазин</a></li>
+		  <li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="site-navigation">
+		  <li><a href="#">Корзина</a></li>
+		</ul>
+	  </nav>
+	  <h1>Магазин готовых шаблонов</h1>
 	</header>
+	
     <main>
 	  <div class="container-wrapper">
+	  
 	    <section class="filters">
 	      <h2 class="visually-hidden">Фильтр</h2>
 		    <div class="container">
@@ -57,7 +55,7 @@
 			      </div>
 	            </fieldset>
 			
-			    <fieldset>
+			    <fieldset class="filter-item">
 		          <legend class="grid">Сетка:</legend>
 		          <ul class="grid-list">
 		            <li class="grid-option">
@@ -75,7 +73,7 @@
 		          </ul>
                 </fieldset>
 			
-			    <fieldset>
+			    <fieldset class="filter-item">
 		          <legend class="properties">Особенности:</legend>
 		          <ul class="properties-list">
 		            <li class="properties-item">
@@ -104,6 +102,7 @@
 		      </form>
 		    </div>
 	    </section>
+		
 	    <section class="catalog-partners">
 	      <h2 class="visually-hidden">Наши лучшие предложения</h2>
 		  <div class="container">
@@ -243,6 +242,7 @@
 		  </section>
 		</div> 
 	  </section>
+	  
 	  <section class="footer-social">
 	    <h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <div class="container">
@@ -287,11 +287,11 @@
 	    <div class="wrapper">
 		  <p>
 		    <label for="user-name"><b>Ваше имя:</b></label>
-			<input class="error" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+			<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
 		  </p> 
 		  <p>
 		    <label for="user-email"><b>Ваш e-mail:</b></label>
-			<input class="error" type="text" name="email" id="user-email" placeholder="email@example.com">
+			<input type="text" name="email" id="user-email" placeholder="email@example.com">
 		  </p>
 		</div>
 	    <p>
@@ -302,6 +302,6 @@
 		<button class="modal-close" type="button">Закрыть</button>
 	  </form>
 	</section>
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
   </body>
 </html>

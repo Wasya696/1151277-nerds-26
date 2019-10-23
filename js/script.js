@@ -66,7 +66,6 @@ window.addEventListener("keydown", function(evt) {
 	evt.preventDefault();
 	if (popup.classList.contains("modal-window")) {
 	  popup.classList.remove("modal-window");
-	  popup.classList.remove("modal-error");
 	}
   }
 });

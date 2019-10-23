@@ -5,32 +5,30 @@
     <title>HTML Academy: Нёрдс</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
   </head>
+  
   <body>
     <header>
-	  <div class="container">
-	    <nav class="main-navigation">
-		  <a class="main-header-logo">
-		    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
-		  </a>
-		  <div class="wrapper">
-		    <ul class="site-navigation">
-		      <li><a href="#">Студия</a></li>
-		      <li><a href="#">Клиенты</a></li>
-		      <li><a href="catalog.html">Магазин</a></li>
-		      <li><a href="#">Контакты</a></li>
-		    </ul>
-		    <div class="basket">
-		      <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" style="margin-right: 25px; align-self: center;">
-		      <a href="#">Корзина</a>
-		    </div>
-		  </div>
-	    </nav>
-	  </div>
+	  <nav class="main-navigation container">
+		<a class="main-header-logo">
+		  <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдса">
+		</a>
+		<ul class="site-navigation">
+		  <li><a class="active">Студия</a></li>
+		  <li><a href="#">Клиенты</a></li>
+		  <li><a href="catalog.html">Магазин</a></li>
+		  <li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="site-navigation">
+		  <li><a href="#">Корзина</a></li>
+		</ul>
+	  </nav>
 	</header>
+	
 	<main>
 	  <h1 class="visually-hidden">Студия Нёрдс</h1>
+	  
 	  <article class="sliders">
 	    <h2 class="visually-hidden">Преимущества</h2>
 	    <div class="container">
@@ -47,24 +45,25 @@
 		      <h3>Долго, дорого, <br> скрупулезно.</h3>
 		      <p>Математически выверенный дизайн <br>
 		      для вашего сайта или мобильного приложения.</p>
-		      <a class="button" href="#">Узнать больше</a>
+		      <a class="button slider-button" href="#">Узнать больше</a>
 		    </li>
 		    <li class="slider-item">
 		      <h3>Любим математику <br> как никто другой</h3>
 		      <p>Никакого креатива, только математические формулы <br> 
 		      для расчета идеальных пропорций.</p>
-		      <a class="button" href="#">Узнать больше</a>
+		      <a class="button slider-button" href="#">Узнать больше</a>
 		    </li>
 		    <li class="slider-item"> 
 		      <h3>Только ночь, <br> только хардкор</h3>
 		      <p>Работать днем, как все? Мы против этого <br>
 		      Ближе к полуночи работа только начинается.</p>
-		      <a class="button" href="#">Узнать больше</a>
+		      <a class="button slider-button" href="#">Узнать больше</a>
 		    </li>
 		  </ul>
 		</div>
 	  </article>
-	  <section class="partners">
+	  
+	  <section class="advantages">
 	    <h2 class="visually-hidden">Наши услуги</h2>
 	    <div class="container">
 	      <ul class="services-list">
@@ -86,11 +85,12 @@
 		    </ul>
 		</div>
 	  </section>
+	  
 	  <section class="about-us">
 	    <h2 class="visually-hidden">О нас</h2>
 		<div class="container">
-		  <div class="description">
-		    <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
+		  <div class="description-studio">
+		    <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
 		    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
 		    превыше креатива. Работаем не покладая рук, как роботы.</p>
 		    <b>Выполняем заказы на разработку:</b>
@@ -101,49 +101,59 @@
 		    </ul>
 		  </div>
 		  <div class="statistics">
-		    <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация     Нёрдса">
-		    <b>С 2004 года любим точность во всем:</b>
-		    <table>
-		      <tbody>
-		        <tr>
-			      <td class="percentages">146<sup>%</sup></td>
-			      <td class="percentages">100<sup>%</sup></td>
-			      <td class="percentages">50<sup>%</sup></td>
-		        </tr>
-		        <tr>
-			      <td class="details">Уровень самоотдачи</td>
-			      <td class="details">Соблюдение сроков</td>
-			      <td class="details">Минимальная предоплата</td>
-	            <tr>
-			  </tbody>
-		    </table>
+		    <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация Нёрдса">
+		    <b class="percentages-list-title">С 2004 года любим точность во всем:</b>
+			<ul class="percentages-list">
+			  <li>
+			    <b>146<sup>%</sup></b>
+				<p>Уровень самоотдачи</p>
+			  </li>
+			  <li>
+			    <b>100<sup>%</sup></b>
+				<p>Соблюдение сроков</p>
+			  </li>
+			  <li>
+			    <b>50<sup>%</sup></b>
+				<p>Минимальная предоплата</p>
+			  </li>
+			</ul>
 		  </div>
 		</div>
 	  </section>
+	  
 	  <section class="partners">
 	    <h2 class="visually-hidden">Наши партнёры</h2>
 		<div class="container">
-	      <ul class="partners-list">
+		  <ul class="partners-list">
 		    <li class="partners-item">
-		      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src=  "img/logo-html-academy.png" width="199" height="68" alt="Логотип HTML Academy"></a>
-		    </li>
-		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-barbershop.png" width="209" height="90" alt=  "Логотип Барбершопа"></a>
-		    </li>
-		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink"></a>  
-		    </li>
-		    <li class="partners-item">
-		      <a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Мишки"></a>  
-		    </li>
-		  </ul>
+		      <a href="https://htmlacademy.ru/intensive/htmlcss" class="partner">
+		        <img src="img/logo-html-academy.png" width="199" height="68" alt="Логотип HTML Academy">
+		      </a>
+			</li>
+			<li class="partners-item">
+		      <a href="#" class="partner">
+		        <img src="img/logo-barbershop.png" width="209" height="90" alt="Логотип Барбершопа">
+		      </a>
+			</li>
+			<li class="partners-item">
+		      <a href="#" class="partner">
+		        <img src="img/logo-pink.png" width="185" height="52" alt="Логотип Pink">
+		      </a> 
+            </li>
+            <li class="partners-item">			
+		      <a href="#" class="partner">
+		        <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Мишки">
+		      </a>
+            </li>
+          </ul>			
 		</div>
 	  </section>
 	</main>
+	
 	<footer>
 	  <section class="map">
 	    <h2 class="visually-hidden">Карта</h2>
-		<iframe src="https://yandex.ru/map-widget/v1/-/CGwCrTLp" width="560" height="400" frameborder="0" allowfullscreen="true"></iframe>
+		<iframe src="https://yandex.ru/map-widget/v1/-/CGwCrTLp"></iframe>
 	    <div class="container"> 
 	      <section class="address">
 	        <h2 class="visually-hidden">Контакты</h2>
@@ -154,6 +164,7 @@
 		  </section>
 		</div> 
 	  </section>
+	  
 	  <section class="footer-social">
 	    <h2 class="visually-hidden">Мы в социальных сетях</h2>
 	    <div class="container">
@@ -163,7 +174,7 @@
 			    <a class="social-link" href="#">
 				  <span class="visually-hidden">Вконтакте</span>
 				  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
-				    <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.  935-2.419z"/>
+				    <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312"/>
 				  </svg>
 				</a>
 			  </li>
@@ -192,17 +203,18 @@
 		</div>
 	  </section>
 	</footer>
+	
 	<section class="modal modal-login">
 	  <h2>Напишите нам</h2>
 	  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 	    <div class="wrapper">
 		  <p>
 		    <label for="user-name"><b>Ваше имя:</b></label>
-			<input class="error" type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+			<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
 		  </p> 
 		  <p>
 		    <label for="user-email"><b>Ваш e-mail:</b></label>
-			<input class="error" type="text" name="email" id="user-email" placeholder="email@example.com">
+			<input type="text" name="email" id="user-email" placeholder="email@example.com">
 		  </p>
 		</div>
 	    <p>
@@ -213,6 +225,6 @@
 		<button class="modal-close" type="button">Закрыть</button>
 	  </form>
 	</section>
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
   </body>
 </html>
