@@ -795,13 +795,6 @@ fieldset ul {
 	min-height: 23px;
 }
 
-.grid-option:first-child label:focus,
-.grid-option:first-child label:hover,
-.properties-item:first-child label:focus,
-.properties-item:first-child label:hover {
-	opacity: 1;
-}
-
 .grid-option:focus, .grid-option:hover {
 	color: black;
 }
@@ -871,11 +864,6 @@ fieldset ul {
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
 	opacity: 1;
-}
-
-.grid-option:first-child label,
-.properties-item:first-child label {
-	opacity: .3;
 }
 
 .filters button, .sorting {
