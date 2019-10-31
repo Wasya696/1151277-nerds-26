@@ -38,15 +38,18 @@ close.addEventListener("click", function(evt) {
 
 form.addEventListener("submit", function(evt) {
 	
-	if (!userName.value || !email.value) {
-	  evt.preventDefault();
-		popup.classList.add("modal-error");
-	} else if (!userName.value) {
+	if (!userName.value) {
 		evt.preventDefault();
 		userName.classList.add("error");
+		popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+		popup.classList.add("modal-error");
 	} else if (!email.value) {
 		evt.preventDefault();
 		email.classList.add("error");
+		popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+		popup.classList.add("modal-error");
 	} else {
 		
 		if (isStorageSupport) {
@@ -80,4 +83,5 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
 
