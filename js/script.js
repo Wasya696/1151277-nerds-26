@@ -12,18 +12,18 @@ var storage = "";
 
 try {
 	storage = localStorage.getItem("userName");
-	} catch (err) {
+} catch (err) {
 	isStorageSupport = false;
 }
 
 link.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	popup.classList.add("modal-window");
-	
+
 	if (storage) {
 		userName.value = storage;
 		email.focus();
-		} else {
+	} else {
 		userName.focus();
 	}
 });
@@ -37,21 +37,21 @@ close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-	
+
 	if (!userName.value) {
 		evt.preventDefault();
 		userName.classList.add("error");
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
-		} else if (!email.value) {
+	} else if (!email.value) {
 		evt.preventDefault();
 		email.classList.add("error");
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
-		} else {
-		
+	} else {
+
 		if (isStorageSupport) {
 			localStorage.setItem("userName", userName.value);
 		}
@@ -59,29 +59,27 @@ form.addEventListener("submit", function(evt) {
 });
 
 userName.addEventListener("focus", function() {
-	
+
 	if (userName.classList.contains("error")) {
 		userName.classList.remove("error");
 	}
 });
 
 email.addEventListener("focus", function() {
-	
+
 	if (email.classList.contains("error")) {
 		email.classList.remove("error");
 	}
 });
 
 window.addEventListener("keydown", function(evt) {
-	
+
 	if (evt.keyCode === 27) {
 		evt.preventDefault();
-		
+
 		if (popup.classList.contains("modal-window")) {
 			popup.classList.remove("modal-window");
 			popup.classList.remove("modal-error");
 		}
 	}
 });
-
-
